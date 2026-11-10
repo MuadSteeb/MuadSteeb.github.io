@@ -89,7 +89,7 @@
         }
         slot.replaceChildren(player);
         player.focus();
-        if (status) status.textContent = "Showreel";
+        if (status) status.textContent = title;
       }, { once: true });
     } catch (error) {
       const message = document.createElement("p");

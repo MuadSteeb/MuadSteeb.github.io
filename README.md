@@ -1,6 +1,9 @@
-# Video producer résumé & portfolio
+# Personal portfolio
 
-A classic, responsive portfolio for **https://muadsteeb.github.io/**. Plain HTML,
+A GitHub-inspired dark portfolio for **https://muadsteeb.github.io/**, with one
+centered 16:9 featured video and six 16:9 video slots in three rows of two.
+The two-column video layout is retained on mobile. Photography, résumé, and
+contact sections follow the videos. Plain HTML,
 CSS, and a small video enhancement script; no build step, packages, trackers,
 third-party fonts, or stock portfolio work.
 
@@ -19,9 +22,9 @@ Edit `index.html` directly, including through GitHub's file editor.
 3. Add your videos and photographs using the examples below.
 4. Replace the email placeholder with your actual email link. Add only profile
    links you want to make public.
-5. Once personalized, remove the "Portfolio in progress" note, sample-content
-   instructions in the section introductions, gallery placeholder note, and
-   "Contact details coming soon." Update media captions.
+5. Once personalized, remove the placeholder notice in the footer, gallery
+   placeholder note, and "Contact details coming soon." Update the media captions
+   and "Videos to be added" / "Images to be added" section notes.
 
 `styles.css` contains colors, layout, mobile styles, and a print layout.
 The **Print / save résumé** button opens the browser's print dialog; choose
@@ -34,10 +37,10 @@ Each `.video-slot` in `index.html` has `data-video-url=""`. Put your real video
 link between those quotes and replace `data-video-title` with an accurate title:
 
 ```html
-<div class="video-slot project-art art-one"
+<div class="video-slot"
      data-video-url="https://www.youtube.com/watch?v=YOUR_VIDEO_ID"
      data-video-title="Your project title">
-  <span class="media-placeholder-label">Your project title</span>
+  <span class="placeholder-content">Your project title</span>
 </div>
 ```
 
@@ -60,13 +63,13 @@ playback. Do not put secret links in this public repository.
 For self-hosted videos, add WebVTT captions:
 
 ```html
-<div class="video-slot project-art art-one"
+<div class="video-slot"
      data-video-url="assets/showreel.mp4"
      data-video-title="Your showreel"
      data-captions-url="assets/showreel.en.vtt"
      data-captions-lang="en"
      data-captions-label="English">
-  <span class="media-placeholder-label">Your showreel</span>
+  <span class="placeholder-content">Your showreel</span>
 </div>
 ```
 

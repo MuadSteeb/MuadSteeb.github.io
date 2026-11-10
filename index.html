@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A video producer's resume and portfolio. Personal details and selected work are coming soon.">
-    <meta name="theme-color" content="#f6f3ed">
-    <title>Your Name | Video Producer</title>
+    <meta name="description" content="Selected videos, photography, and background. Personal details and work are coming soon.">
+    <meta name="theme-color" content="#0d1117">
+    <title>Your Name | Portfolio</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
     <script src="media.js" defer></script>
@@ -14,8 +14,8 @@
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header wrap">
       <a class="identity" href="#home" aria-label="Your Name, home">
-        <span class="monogram" aria-hidden="true">YN<span>.</span></span>
-        <span class="identity-text">Your Name<span>Video producer</span></span>
+        <span class="monogram" aria-hidden="true">YN</span>
+        <span class="identity-text">Your Name <span>/ Portfolio</span></span>
       </a>
       <nav aria-label="Main navigation">
         <a href="#work">Work</a>
@@ -27,62 +27,65 @@
     <main id="main">
       <section class="hero wrap" id="home" aria-labelledby="intro-title">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="small-line" aria-hidden="true"></span> A video producer's portfolio</p>
-          <h1 id="intro-title">Stories, shaped<br>for the <em>screen.</em></h1>
-          <p class="intro">I'm [Your Name], a video producer.</p>
-          <p class="muted bio">[Add a short introduction: the stories you like to tell, the work you do, and what you bring to a production.]</p>
-          <div class="hero-actions">
-            <a class="button" href="#work">Explore the work <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="#resume">View résumé <span aria-hidden="true">↓</span></a>
-          </div>
-          <p class="template-note">Portfolio in progress. Personal details and media are placeholders.</p>
+          <h1 id="intro-title">Your Name <span class="badge">Portfolio</span></h1>
+          <p class="muted bio">[Add a short introduction about yourself and your work.]</p>
         </div>
         <figure class="reel">
+          <div class="card-heading"><span>Featured video</span><span class="badge">16:9</span></div>
           <!-- Add a YouTube, Vimeo, or direct video URL to data-video-url. -->
-          <div class="video-slot reel-art" data-video-url="" data-video-title="Showreel">
-            <span class="frame-corner top-left" aria-hidden="true"></span>
-            <span class="frame-corner top-right" aria-hidden="true"></span>
-            <span class="reel-top">A selection of moments</span>
-            <span class="reel-word" aria-hidden="true">PLAY<br><em>your story.</em></span>
-            <span class="media-placeholder-label">Your showreel here</span>
-            <span class="frame-corner bottom-left" aria-hidden="true"></span>
-            <span class="frame-corner bottom-right" aria-hidden="true"></span>
+          <div class="video-slot" data-video-url="" data-video-title="Featured video">
+            <div class="placeholder-content"><span class="play-icon" aria-hidden="true"></span><span>Featured video placeholder</span></div>
           </div>
-          <figcaption><span>01 / Showreel</span><span class="reel-status">Video to be added</span></figcaption>
+          <figcaption><span>[Featured video title]</span><span class="reel-status">Video to be added</span></figcaption>
         </figure>
       </section>
       <section class="section wrap" id="work" aria-labelledby="work-title">
         <div class="section-heading">
-          <div><p class="eyebrow">01 / Selected work</p><h2 id="work-title">The work, in focus.</h2></div>
-          <p>A few projects, and the stories behind them.<br><span class="muted">Replace these samples with your own work.</span></p>
+          <h2 id="work-title">Selected work <span class="count">6</span></h2>
+          <p>Videos to be added</p>
         </div>
         <div class="work-grid">
           <article class="project">
-            <div class="video-slot project-art art-one" data-video-url="" data-video-title="Project one">
-              <span class="art-number" aria-hidden="true">01</span><span class="media-placeholder-label">Video placeholder</span>
+            <div class="card-heading"><h3>[Project title]</h3><span class="badge">01</span></div>
+            <div class="video-slot" data-video-url="" data-video-title="Project one">
+              <div class="placeholder-content"><span class="play-icon" aria-hidden="true"></span><span>Video placeholder</span></div>
             </div>
-            <div class="project-meta"><span>[Project type]</span><span>[Year]</span></div>
-            <h3>[Project title]</h3>
-            <p>[Introduce the project, your role, and one detail about the production.]</p>
-            <p class="project-credit">Your role: [Add your contribution]</p>
+            <p class="project-description">[Add a short description and your contribution.]</p>
           </article>
           <article class="project">
-            <div class="video-slot project-art art-two" data-video-url="" data-video-title="Project two">
-              <span class="art-number" aria-hidden="true">02</span><span class="media-placeholder-label">Video placeholder</span>
+            <div class="card-heading"><h3>[Project title]</h3><span class="badge">02</span></div>
+            <div class="video-slot" data-video-url="" data-video-title="Project two">
+              <div class="placeholder-content"><span class="play-icon" aria-hidden="true"></span><span>Video placeholder</span></div>
             </div>
-            <div class="project-meta"><span>[Project type]</span><span>[Year]</span></div>
-            <h3>[Project title]</h3>
-            <p>[Introduce the project, your role, and one detail about the production.]</p>
-            <p class="project-credit">Your role: [Add your contribution]</p>
+            <p class="project-description">[Add a short description and your contribution.]</p>
           </article>
           <article class="project">
-            <div class="video-slot project-art art-three" data-video-url="" data-video-title="Project three">
-              <span class="art-number" aria-hidden="true">03</span><span class="media-placeholder-label">Video placeholder</span>
+            <div class="card-heading"><h3>[Project title]</h3><span class="badge">03</span></div>
+            <div class="video-slot" data-video-url="" data-video-title="Project three">
+              <div class="placeholder-content"><span class="play-icon" aria-hidden="true"></span><span>Video placeholder</span></div>
             </div>
-            <div class="project-meta"><span>[Project type]</span><span>[Year]</span></div>
-            <h3>[Project title]</h3>
-            <p>[Introduce the project, your role, and one detail about the production.]</p>
-            <p class="project-credit">Your role: [Add your contribution]</p>
+            <p class="project-description">[Add a short description and your contribution.]</p>
+          </article>
+          <article class="project">
+            <div class="card-heading"><h3>[Project title]</h3><span class="badge">04</span></div>
+            <div class="video-slot" data-video-url="" data-video-title="Project four">
+              <div class="placeholder-content"><span class="play-icon" aria-hidden="true"></span><span>Video placeholder</span></div>
+            </div>
+            <p class="project-description">[Add a short description and your contribution.]</p>
+          </article>
+          <article class="project">
+            <div class="card-heading"><h3>[Project title]</h3><span class="badge">05</span></div>
+            <div class="video-slot" data-video-url="" data-video-title="Project five">
+              <div class="placeholder-content"><span class="play-icon" aria-hidden="true"></span><span>Video placeholder</span></div>
+            </div>
+            <p class="project-description">[Add a short description and your contribution.]</p>
+          </article>
+          <article class="project">
+            <div class="card-heading"><h3>[Project title]</h3><span class="badge">06</span></div>
+            <div class="video-slot" data-video-url="" data-video-title="Project six">
+              <div class="placeholder-content"><span class="play-icon" aria-hidden="true"></span><span>Video placeholder</span></div>
+            </div>
+            <p class="project-description">[Add a short description and your contribution.]</p>
           </article>
         </div>
         <noscript><p class="notice">Video players require JavaScript. Enable it to view configured videos.</p></noscript>
@@ -90,8 +93,8 @@
       <section class="section photo-section" id="photography" aria-labelledby="photo-title">
         <div class="wrap">
           <div class="section-heading">
-            <div><p class="eyebrow">02 / Still frames</p><h2 id="photo-title">Beyond the moving image.</h2></div>
-            <p>Production stills, photography, and behind the scenes.<br><span class="muted">Your images will live here.</span></p>
+            <h2 id="photo-title">Photography</h2>
+            <p>Images to be added</p>
           </div>
           <div class="photo-grid">
             <!-- Replace each .photo-placeholder with a linked image. See README. -->
@@ -104,8 +107,8 @@
       </section>
       <section class="section wrap resume-section" id="resume" aria-labelledby="resume-title">
         <div class="resume-intro">
-          <p class="eyebrow">03 / Background</p><h2 id="resume-title">Behind<br> the work.</h2>
-          <p class="muted">[Write a short biography about your approach to production, your interests, and your experience.]</p>
+          <h2 id="resume-title">Résumé</h2>
+          <p class="muted">[Write a short biography about your interests and experience.]</p>
           <button class="text-link print-button" type="button" hidden>Print / save résumé <span aria-hidden="true">↗</span></button>
         </div>
         <div class="resume-details">
@@ -116,17 +119,17 @@
           </article>
           <article class="experience">
             <p class="date">[Start year — End year]</p>
-            <div><h4>[Previous position]</h4><p class="organization">[Company or organization]</p><p>[Describe the productions you supported, your responsibilities, and what you delivered.]</p></div>
+            <div><h4>[Previous position]</h4><p class="organization">[Company or organization]</p><p>[Describe your responsibilities and what you delivered.]</p></div>
           </article>
           <div class="resume-bottom">
-            <div><h3 class="resume-label">Skills &amp; tools</h3><p class="muted">[Add your production skills]<br>[Add your editing software]<br>[Add your equipment experience]</p></div>
+            <div><h3 class="resume-label">Skills &amp; tools</h3><p class="muted">[Add your skills]<br>[Add the tools you use]<br>[Add relevant experience]</p></div>
             <div><h3 class="resume-label">Education &amp; training</h3><h4>[Program or qualification]</h4><p class="muted">[Institution / Year]<br>[Relevant training, if applicable]</p></div>
           </div>
         </div>
       </section>
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
         <div class="wrap contact-inner">
-          <div><p class="eyebrow">04 / Get in touch</p><h2 id="contact-title">Every story starts<br>with a <em>conversation.</em></h2></div>
+          <div><h2 id="contact-title">Contact</h2><p class="muted">Let's connect.</p></div>
           <div class="contact-details">
             <p>[Add a short invitation to discuss projects or collaborations.]</p>
             <!-- Replace this paragraph with a mailto link when ready. -->
@@ -137,6 +140,6 @@
         </div>
       </section>
     </main>
-    <footer class="site-footer wrap"><p>Your Name <span aria-hidden="true">/</span> Video producer</p><a href="#home">Back to top <span aria-hidden="true">↑</span></a></footer>
+    <footer class="site-footer wrap"><p>Your Name <span aria-hidden="true">/</span> Portfolio</p><p>Personal details and media are placeholders.</p><a href="#home">Back to top <span aria-hidden="true">↑</span></a></footer>
   </body>
 </html>
