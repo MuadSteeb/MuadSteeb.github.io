@@ -7,9 +7,10 @@ contact sections follow the videos. Plain HTML,
 CSS, and a small video enhancement script; no build step, packages, trackers,
 third-party fonts, or stock portfolio work.
 
-**Content status:** names, biography, experience, project credits,
-videos, and contact information are explicit placeholders. Nothing in brackets
-is a real personal claim. Empty video slots are artwork, not playable samples.
+**Content status:** the third project contains a supplied Vimeo embed. Names,
+biography, experience, project credits, remaining videos, and contact information
+are placeholders. Nothing in brackets is a real personal claim. Empty video slots
+are artwork, not playable samples.
 
 ## Edit your content
 
@@ -24,7 +25,7 @@ Edit `index.html` directly, including through GitHub's file editor.
    links you want to make public.
 5. Once personalized, remove the placeholder notice in the footer and
    "Contact details coming soon." Update the media captions and
-   "Videos to be added" section note.
+   "More videos to be added" section note.
 
 `styles.css` contains colors, layout, mobile styles, and a print layout.
 The **Print / save résumé** button opens the browser's print dialog; choose
@@ -33,7 +34,7 @@ not download a prewritten résumé. The text layout works without JavaScript.
 
 ## Add videos
 
-Each `.video-slot` in `index.html` has `data-video-url=""`. Put your real video
+Each remaining placeholder `.video-slot` in `index.html` has `data-video-url=""`. Put your real video
 link between those quotes and replace `data-video-title` with an accurate title:
 
 ```html
@@ -54,11 +55,17 @@ Replace `YOUR_VIDEO_ID` with your own 11-character YouTube ID. Supported sources
   `assets/showreel.mp4`. For large videos, prefer a video hosting provider instead
   of committing large files to Git.
 
-Players load **only when a visitor clicks**. YouTube uses its privacy-enhanced
+Players configured with `data-video-url` load **only when a visitor clicks**. YouTube uses its privacy-enhanced
 domain, and Vimeo is requested with `dnt=1`; loading still connects to that
 provider. Videos never autoplay. Enable embedding for your videos in the provider
 settings; provider restrictions, deleted videos, and private videos can prevent
 playback. Do not put secret links in this public repository.
+
+The third project uses a direct Vimeo `<iframe>` instead. Edit its `src` and
+`title` directly, retaining the video's `h` parameter for unlisted access.
+It loads near the viewport and connects to Vimeo without an extra load button.
+The existing `.video-slot` keeps it at 16:9. No Vimeo JavaScript SDK is needed
+for the embedded player's built-in controls.
 
 For self-hosted videos, add WebVTT captions:
 
