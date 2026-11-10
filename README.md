@@ -2,12 +2,12 @@
 
 A GitHub-inspired dark portfolio for **https://muadsteeb.github.io/**, with one
 centered 16:9 featured video and six 16:9 video slots in three rows of two.
-The two-column video layout is retained on mobile. Photography, résumé, and
+The two-column video layout is retained on mobile. Résumé and
 contact sections follow the videos. Plain HTML,
 CSS, and a small video enhancement script; no build step, packages, trackers,
 third-party fonts, or stock portfolio work.
 
-**Content status:** names, biography, experience, project credits, photographs,
+**Content status:** names, biography, experience, project credits,
 videos, and contact information are explicit placeholders. Nothing in brackets
 is a real personal claim. Empty video slots are artwork, not playable samples.
 
@@ -19,12 +19,12 @@ Edit `index.html` directly, including through GitHub's file editor.
    `<title>`, description, and home link's accessible label too.
 2. Replace bracketed text with your introduction, project titles, roles,
    experience, skills, and education. Remove entries you do not need.
-3. Add your videos and photographs using the examples below.
+3. Add your videos using the examples below.
 4. Replace the email placeholder with your actual email link. Add only profile
    links you want to make public.
-5. Once personalized, remove the placeholder notice in the footer, gallery
-   placeholder note, and "Contact details coming soon." Update the media captions
-   and "Videos to be added" / "Images to be added" section notes.
+5. Once personalized, remove the placeholder notice in the footer and
+   "Contact details coming soon." Update the media captions and
+   "Videos to be added" section note.
 
 `styles.css` contains colors, layout, mobile styles, and a print layout.
 The **Print / save résumé** button opens the browser's print dialog; choose
@@ -77,26 +77,6 @@ For YouTube and Vimeo, manage captions at the provider. Include descriptive
 project text and transcripts where appropriate. Leave `data-video-url` empty to
 retain a placeholder. Unsupported URLs produce a visible setup error instead of
 silently failing. Update each project's text and credits separately from its URL.
-
-## Add photographs
-
-Upload web-sized JPG, PNG, WebP, or AVIF files to `assets/` (use lowercase,
-hyphenated filenames). Replace a complete `.photo-placeholder` element with:
-
-```html
-<a href="assets/your-photo.jpg">
-  <img src="assets/your-photo.jpg"
-       alt="Describe the photograph and its relevant details"
-       width="1600" height="1200"
-       loading="lazy" decoding="async">
-</a>
-```
-
-Keep the surrounding `<figure>` and edit its `<figcaption>`. Set width and height
-to the image's actual dimensions. Thumbnails crop to fit the gallery; clicking
-opens the full image. Use `style="object-position: center top"` on an image if a
-different crop is needed. Publish only media you have permission to share and
-remove private location/EXIF metadata before uploading.
 
 ## Add contact details
 
@@ -154,7 +134,7 @@ Check the repository's Actions tab for the Pages build and deployment result.
 ## Before sharing your personalized portfolio
 
 - Replace all bracketed text and template notes; verify titles and credits.
-- Try every configured video, including captions, and open every photo.
+- Try every configured video, including captions.
 - Check navigation and media controls using only the keyboard.
 - Check a narrow mobile viewport and the print preview.
 - Confirm your email and professional links go to the right destinations.

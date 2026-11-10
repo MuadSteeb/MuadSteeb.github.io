@@ -51,15 +51,6 @@ h2 { font-size: 18px; }
 .count { display: inline-block; background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 0 7px; font-size: 12px; margin-left: 6px; vertical-align: middle; }
 .work-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 .project-description { padding: 12px 16px; color: var(--muted); font-size: 12px; border-top: 1px solid var(--border); }
-.photo-section { border-block: 1px solid var(--border); }
-.photo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-.photo-placeholder { aspect-ratio: 4 / 3; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 8px; border: 1px dashed var(--border); border-radius: 6px; background: var(--surface); color: var(--muted); }
-.photo-placeholder > :first-child { font-size: 22px; font-weight: 300; }
-.photo-placeholder > :last-child { font-size: 12px; }
-.photo-grid a { display: block; }
-.photo-grid img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px; }
-.photo-grid figcaption, .gallery-note { font-size: 12px; color: var(--muted); margin-top: 12px; }
-.gallery-note { margin-top: 20px; }
 .resume-section { display: grid; grid-template-columns: 1fr 2fr; gap: 48px; padding-block: 40px; }
 .resume-intro > p { margin-block: 16px; font-size: 13px; }
 .text-link { color: var(--accent); font-size: 13px; text-underline-offset: 4px; }
@@ -108,7 +99,6 @@ h4 { font-size: 14px; }
   .project .placeholder-content { gap: 5px; font-size: 10px; }
   .project .play-icon { width: 28px; height: 28px; }
   .project .play-icon::before { border-top-width: 5px; border-bottom-width: 5px; border-left-width: 8px; }
-  .photo-grid { grid-template-columns: 1fr; }
   .experience { grid-template-columns: 1fr; gap: 8px; }
   .resume-bottom { grid-template-columns: 1fr; }
 }
@@ -118,7 +108,7 @@ h4 { font-size: 14px; }
 @media print {
   :root { color-scheme: light; --background: #fff; --surface: #fff; --header: #fff; --text: #111; --muted: #444; --accent: #174878; --border: #bbb; }
   .wrap { width: 100%; }
-  .skip-link, nav, .reel, #work, #photography, .print-button, .site-footer { display: none !important; }
+  .skip-link, nav, .reel, #work, .print-button, .site-footer { display: none !important; }
   .site-header { padding: 0 0 16px; min-height: 0; }
   .hero { padding-block: 20px; }
   .resume-section { display: block; padding-block: 20px; }
